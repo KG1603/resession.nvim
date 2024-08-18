@@ -76,6 +76,11 @@ M.load_extension = function(name, opts)
   end
 end
 
+---Get the name of a session by tabpage
+M.get_by_tabpage = function(tabpage)
+  return tab_sessions[tabpage]
+end
+
 ---Get the name of the current session
 ---@return string?
 M.get_current = function()
